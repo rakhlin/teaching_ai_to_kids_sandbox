@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  alternating-chat:
+    build: .
+    image: alternating-word-chat:latest
+    container_name: alternating-word-chat
+    stdin_open: true
+    tty: true
+    environment:
+      - TOKENIZERS_PARALLELISM=false
+    volumes:
+      # Optional: mount local cache to avoid re-downloading models
+      - ~/.cache/huggingface:/root/.cache/huggingface

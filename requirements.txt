@@ -1,0 +1,5 @@
+transformers>=4.36.0
+torch>=2.0.0
+accelerate>=0.26.0
+SpeechRecognition>=3.10.0
+pyaudio>=0.2.11
